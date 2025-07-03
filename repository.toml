@@ -1,0 +1,37 @@
+[repository]
+name = "plone-deployment-training"
+managed_by_uv = false
+changelog = "CHANGELOG.md"
+version = "version.txt"
+compose = "docker-compose.yml"
+
+[repository.towncrier]
+section = "Project"
+settings = "towncrier.toml"
+
+[backend]
+path = "backend"
+
+[backend.package]
+name = "plone.deployment.training"
+path = "backend"
+changelog = "backend/CHANGELOG.md"
+towncrier_settings = "backend/pyproject.toml"
+base_package = "Products.CMFPlone"
+publish = false
+
+[frontend]
+path = "frontend"
+
+[frontend.package]
+name = "volto-plone-deployment-training"
+path = "frontend/packages/volto-plone-deployment-training"
+changelog = "frontend/packages/volto-plone-deployment-training/CHANGELOG.md"
+towncrier_settings = "frontend/packages/volto-plone-deployment-training/towncrier.toml"
+base_package = "@plone/volto"
+publish = false
+
+[cookieplone]
+template = "project"
+template_version = "d3c64e92c947928ea9bba83c1514b0f491dc97fb"
+generated_date = "2025-07-03 11:30:18"
