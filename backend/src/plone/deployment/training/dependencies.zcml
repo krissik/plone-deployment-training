@@ -3,5 +3,5 @@
   <include package="plone.restapi" />
   <include package="plone.volto" />
   <include package="plone.app.caching" />
-  <include package="pas.plugins.authomatic"/>
+  <include package="pas.plugins.authomatic" />
 </configure>
