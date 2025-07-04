@@ -63,7 +63,7 @@
 
         - name: "SSH: Read authorized_keys from root"
           ansible.builtin.command:
-            cmd: cat /root/.ssh/authorized_keys
+            cmd: cat /home/vagrant/.ssh/authorized_keys
           become_user: "root"
           become: true
           register: root_keys
