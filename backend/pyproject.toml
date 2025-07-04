@@ -27,6 +27,7 @@ dependencies = [
     "plone.api",
     "plone.restapi",
     "plone.volto",
+    "pas.plugins.authomatic"
 ]
 
 [project.optional-dependencies]
